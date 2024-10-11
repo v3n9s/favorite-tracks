@@ -1,0 +1,43 @@
+{
+  "include": ["./src"],
+  "exclude": [],
+  "compilerOptions": {
+    // type checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+
+    // modules
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "rootDir": "./src",
+    "typeRoots": ["./node_modules/@types"],
+
+    // emit
+    "importHelpers": true,
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+
+    // interop constraints
+    "verbatimModuleSyntax": true,
+
+    // language and environment
+    "experimentalDecorators": true,
+    "lib": ["es2023", "dom"],
+    "moduleDetection": "force",
+    "target": "es2023",
+
+    // completeness
+    "skipLibCheck": true
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
