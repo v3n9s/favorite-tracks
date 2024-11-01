@@ -30,6 +30,10 @@ export default tseslint.config(
           allowHigherOrderFunctions: false,
         },
       ],
+      "@typescript-eslint/no-extraneous-class": [
+        "error",
+        { allowWithDecorator: true },
+      ],
       "@angular-eslint/directive-selector": [
         "error",
         {
