@@ -22,18 +22,7 @@ export default tseslint.config(
     },
     processor: angular.processInlineTemplates,
     rules: {
-      "@typescript-eslint/explicit-function-return-type": [
-        "error",
-        {
-          allowDirectConstAssertionInArrowFunctions: false,
-          allowExpressions: true,
-          allowHigherOrderFunctions: false,
-        },
-      ],
-      "@typescript-eslint/no-extraneous-class": [
-        "error",
-        { allowWithDecorator: true },
-      ],
+      // angular configured
       "@angular-eslint/directive-selector": [
         "error",
         {
@@ -50,6 +39,24 @@ export default tseslint.config(
           style: "kebab-case",
         },
       ],
+
+      // additional
+      "@typescript-eslint/explicit-function-return-type": [
+        "error",
+        {
+          allowDirectConstAssertionInArrowFunctions: false,
+          allowExpressions: true,
+          allowHigherOrderFunctions: false,
+        },
+      ],
+      "@typescript-eslint/no-extraneous-class": [
+        "error",
+        { allowWithDecorator: true },
+      ],
+      "@typescript-eslint/strict-boolean-expressions": ["error"],
+
+      // stylistic
+      "@typescript-eslint/consistent-type-definitions": ["off"],
     },
   },
   {
